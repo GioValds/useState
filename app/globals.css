@@ -1,7 +1,9 @@
+/* Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Estilos personalizados */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,10 +26,36 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-size: 1.5rem; /* Ajusta el tamaño del texto */
+  text-align: center; /* Centra el texto */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Estilos para los enlaces */
+a {
+  color: rgb(var(--foreground-rgb));
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #4CAF50; /* Cambia el color al pasar el ratón */
+}
+
+/* Estilos para los botones */
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049; /* Cambia el color al pasar el ratón */
+}
+
+button:active {
+  transform: translateY(2px); /* Añade una ligera animación al hacer clic */
 }
